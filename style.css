@@ -620,6 +620,8 @@ button:hover {
 .table-section .indicators button {
   border: none;
   background: transparent;
+  color: #051238!important;
+  font-weight: 700;
 }
 
 /* program */
