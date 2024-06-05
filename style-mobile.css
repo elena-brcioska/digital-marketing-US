@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1348px) {
+  .feedback-card {
+    padding: 32px;
+    min-height: 350px;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   h2 {
     font-size: 24px !important;
@@ -296,7 +303,7 @@
 
   .path-to-employment .container-section {
     flex-direction: column;
-    gap: 24px;
+    gap: 0;
   }
 
   .path-to-employment div.path-left,
@@ -308,8 +315,7 @@
     font-size: 24px;
   }
 
-  .path-to-employment div.path-left,
-  .path-to-employment div.path-right {
+  .path-to-employment div.path-left {
     text-align: center;
   }
 
@@ -419,6 +425,7 @@
     font-size: 16px;
     font-weight: 500;
     margin: 0;
+    text-align: left;
   }
 
   /* mentors */
@@ -774,16 +781,23 @@
     min-height: 300px;
   }
 
-  .contests .card {
-    min-height: 300px;
-    margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 320px) {
+  .hero-left div p span {
+    padding: 15px 10px;
   }
 
-  .skill-card {
-    min-height: 100px;
+  .offers .price-header p {
+    font-size: 14px;
   }
 
-  .events .card {
-    min-height: 300px;
+  .offers .price-card p span {
+    font-size: 14px;
+  }
+
+  .program-item p {
+    font-size: 13px;
+    margin-left: 8px;
   }
 }
