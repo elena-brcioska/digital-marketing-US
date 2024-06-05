@@ -1,35 +1,27 @@
-@media only screen and (max-width: 1599px) {
-  .testimonial-card .testimonial-body {
-    min-height: 360px;
-  }
-
-  .offers .price-footer {
-    min-height: 220px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .events .card {
-    min-height: 450px;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    background: #fff;
-    box-shadow: 0px 4px 30px 0px rgba(101, 119, 131, 0.1);
-    margin-bottom: 16px;
-  }
-
-}
-
-@media only screen and (max-width: 1170px) {
-  .diploma-card {
-    min-height: 450px;
-  }
-}
-
 @media only screen and (max-width: 992px) {
   h2 {
     font-size: 24px !important;
+  }
+
+  .section-card {
+    text-align: center;
+    padding: 32px 16px;
+  }
+
+  .section-card h3 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 100%; /* 40px */
+    letter-spacing: -1.8px;
+  }
+
+  .section-card h3 span {
+    margin-bottom: 32px;
+  }
+
+  .section-card p {
+    line-height: 21px;
+    letter-spacing: -0.4px;
   }
 
   .spots p {
@@ -126,7 +118,7 @@
   }
 
   .hero h2 {
-    font-size: 18px!important;
+    font-size: 18px !important;
   }
 
   .header-left,
@@ -157,26 +149,34 @@
     margin-bottom: 16px;
   }
 
-  /* comparison */
+  /* program-for */
 
-  .comparison {
-    margin: 56px auto 0;
+  .program-for {
+    padding: 10% 0;
   }
 
-  .table--row.table--header p {
-    font-size: 18px;
+  .program-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    margin-top: 24px;
+  }
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6,
+  .card7 {
+    grid-area: auto;
   }
 
-  .table--row p {
-    font-size: 14px;
-  }
-
-  .ch-table h5 {
-    font-size: 15px;
-  }
-
-  .comparison .ch-table img {
-    width: 100%;
+  .program-card p {
+    margin: 0;
+    padding: 0;
+    color: #051238;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
   }
 
   /* table */
@@ -190,7 +190,7 @@
   }
 
   .green-row,
-  .black-row,
+  .blue-row,
   .yellow-row {
     font-size: 9px;
   }
@@ -201,8 +201,10 @@
   }
 
   .table-wrapper thead,
-  .table-wrapper th {
+  .table-wrapper th,
+  .table-wrapper td {
     height: 50px !important;
+    width: 60px !important;
   }
 
   .table-wrapper td {
@@ -230,6 +232,12 @@
   .table-wrapper th,
   .table-wrapper td {
     width: 13px;
+  }
+
+  .table-section .indicators button {
+    border: none;
+    background: transparent;
+    font-size: 14px;
   }
 
   /* program */
@@ -276,12 +284,6 @@
     width: 100%;
   }
 
-  /* internship */
-
-  .internship {
-    flex-direction: column;
-  }
-
   .lg-image {
     display: none;
   }
@@ -290,165 +292,140 @@
     display: block;
   }
 
-  .internship div.sm-image img {
-    align-self: center;
-    width: 100%;
-  }
+  /* path-to-employment */
 
-  .internship > div {
-    width: 100%;
-  }
-
-  /* testimonials */
-
-  .testimonials .row {
-    display: none;
-  }
-
-  .testimonials-glide {
-    display: block;
-  }
-
-  .testimonial-card .testimonial-body {
-    min-height: 250px;
-  }
-
-  .testimonial-card .testimonial-body p {
-    font-size: 14px;
-  }
-
-  .testimonial-card h4 {
-    font-size: 14px;
-  }
-
-  .testimonial-card .testimonial-footer button {
-    font-size: 14px;
-    margin-top: 24px;
-  }
-
-  .testimonial-card .testimonial-body {
-    border-bottom: 1px solid #d9d9d9;
-  }
-
-  .testimonial-card .testimonial-body div.testimonial-image {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin: 48px 0 16px;
-  }
-
-  /* freelance */
-
-  .freelance > div {
+  .path-to-employment .container-section {
     flex-direction: column;
-    flex-basis: 100%;
-    align-items: center;
+    gap: 24px;
   }
 
-  .freelance img.freelance-img {
+  .path-to-employment div.path-left,
+  .path-to-employment div.path-right {
     width: 100%;
   }
 
-  .freelance h2 {
-    width: 100%;
-    margin: auto;
-  }
-
-  .freelance h3 {
+  .path-to-employment h3 {
     font-size: 24px;
   }
 
-  .freelance p {
-    font-size: 14px;
+  .path-to-employment div.path-left,
+  .path-to-employment div.path-right {
+    text-align: center;
   }
 
-  /* recruiter */
-
-  .recruiter  {
-    flex-direction: column;
-    gap: 64px;
-    padding: 8% 0;
+  .path-to-employment div.path-right > div p {
+    text-align: left;
   }
 
-  .recruiter h3 {
-    font-size: 24px;
+  .path-to-employment div.path-left p {
+    font-size: 20px;
+  }
+
+  .path-to-employment div.path-left div {
+    border-radius: 16px;
+    border: 2px solid #00ff94;
+    background: #fff;
+    width: 180px;
+    padding: 12px;
+    /* margin-top: 32px; */
+    margin: 32px auto;
+    position: relative;
   }
 
   /* diploma */
 
-  .diploma h2 {
+  .diploma {
+    text-align: center;
+  }
+
+  .diploma h3 {
+    font-size: 26px;
+    line-height: 120%;
+    letter-spacing: -0.312px;
+  }
+
+  .diploma p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%; /* 21.6px */
+    letter-spacing: -0.8px;
+  }
+
+  .diploma .container-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .diploma .container-section > div {
     width: 100%;
   }
 
-  .diploma-card {
-    min-height: 450px;
-    margin-bottom: 16px;
-  }
-
-  .diploma-card h3 {
-    font-size: 16px;
-  }
-  .diploma-card p {
-    font-size: 14px;
-  }
-
-  .diploma .step {
-    left: 38%;
+  .diploma img {
+    margin: auto;
   }
 
   /* contests */
 
-  .contests .card {
-    min-height: 400px;
+  .contests {
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 58px;
+    flex-direction: column;
+  }
+
+  .contests h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .contests p {
+    font-size: 16px;
     margin-bottom: 16px;
   }
 
-  .contests .card h5 {
-    font-size: 18px;
+  .contests img {
+    width: 100%;
   }
 
-  .contests .step {
-    left: 38%;
-  }
+  /* freelance */
 
-  /* after academy */
-
-  .after-academy {
-    flex-direction: column;
-    flex-basis: 100%;
-  }
-
-  .after-academy > div {
-    flex-basis: 100%;
-  }
-
-  .after-academy h3 {
-    font-size: 24px !important;
-  }
-
-  .after-academy p {
-    font-size: 16px;
-  }
-
-  /* skills */
-
-  .skills {
+  .freelance {
     padding: 15% 0;
   }
 
-  .skill-card {
-    padding: 20px 32px;
+  .freelance-wrapper {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+    margin-top: 32px;
+  }
+
+  .freelance-wrapper > div div {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
     margin-bottom: 16px;
   }
 
-  .skill-card h3 {
+  .freelance-wrapper > div div p {
     color: #051238;
-    font-size: 18px;
-    font-weight: 700;
-    margin: 24px 0;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
   }
 
   /* mentors */
+
+  .mentors {
+    padding: 8% 0;
+  }
 
   .mentor-card h4 {
     font-size: 16px;
@@ -481,55 +458,54 @@
     margin-top: 16px;
   }
 
+  /* free-course */
+
+  .free-course .modal-header .modal-title {
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  .free-course .modal-header .modal-title span {
+    color: #0059ff;
+  }
+
   /* offers */
 
   .offers {
-    padding: 15% 0;
+    padding: 10% 0;
+  }
+
+  .offers .price-header p {
+    font-size: 18px;
+    letter-spacing: -0.2;
+  }
+
+  .offers .price-card p span {
+    font-size: 20px;
+    font-weight: 800;
   }
 
   .offers h2 {
     margin-bottom: 32px;
   }
 
+  .offers .price-footer {
+    min-height: 0;
+  }
+
+  .offers .price-footer p.financing {
+    font-size: 16px;
+  }
+
   .offers .price-card button {
     font-size: 16px;
     padding: 16px 8px;
-  }
-
-  .price-card .scholarship p span {
-    font-size: 18x;
-    line-height: 1;
-  }
-
-  .price-card .scholarship h3 {
-    font-size: 24px;
-  }
-
-  .price-card .scholarship button {
-    font-size: 14px;
-  }
-
-  /* events */
-
-  .events  button {
-    margin: auto;
-  }
-
-  .events h2 {
-    margin-bottom: 32px;
-  }
-
-  .events .card {
-    min-height: 400px;
+    margin-top: 16px;
     margin-bottom: 16px;
   }
 
-  .events .card h5 {
-    font-size: 18px;
-  }
-
-  .events button {
-    display: block;
+  .offers .price-footer span {
+    font-size: 14px;
   }
 
   .hidden {
@@ -542,35 +518,152 @@
     animation-duration: 0.5s;
   }
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
+  /* students */
 
-  /* success-stories */
-
-  .success-stories {
+  .students {
     padding: 15% 0;
   }
 
-  .success-card p {
+  .students-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 5fr;
+    grid-column-gap: 0;
+    grid-row-gap: 32px;
+    margin-top: 32px;
+  }
+
+  /* financing */
+
+  .financing-options h4 {
+    font-size: 20px;
+  }
+
+  .financing-options p {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .financing-options .accordion {
+    width: 100%;
+    margin: auto;
+  }
+
+  .financing-options .accordion-item {
+    margin-bottom: 24px;
+    padding: 8px 0;
+  }
+
+  .financing-options .accordion-item p {
+    margin: 0 16px;
+    color: #051238;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .financing-options .accordion-body {
+    margin-top: 32px;
+  }
+
+  .financing-options .accordion-body p {
+    font-size: 18px;
+    margin-bottom: 32px;
+    text-align: left;
+    line-height: 120%;
+  }
+
+  .financing-options .accordion-body p span {
+    font-weight: 800;
+  }
+
+  .financing-options .offer-card {
+    padding: 16px;
+    margin-bottom: 32px;
+  }
+
+  .financing-options .offer-card .card-top > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+  }
+
+  .financing-options .offer-card .card-top p {
     font-size: 18px;
   }
 
-  .success-card p span {
-    font-size: 16px;
+  .financing-options .offer-card .card-top span {
+    font-size: 18px;
   }
 
-  /* video message */
-
-  .video iframe {
+  .financing-options .form-wrapper {
     width: 100%;
-    height: auto;
+    padding: 16px;
+  }
+
+  /* refund */
+
+  .refund {
+    padding: 48px 16px;
+    margin: 15% auto;
+  }
+
+  .refund h3 {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .refund p {
+    font-size: 20px;
+    line-height: 120%; /* 24px */
+    letter-spacing: -0.4px;
+  }
+
+  /* feedback */
+
+  .feedback-card {
+    padding: 32px;
+    min-height: 300px;
+  }
+
+  /* community */
+
+  .community.container-section {
+    width: 90%;
+    padding: 15% 0;
+  }
+
+  .community h3 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .community .row {
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+
+  .community span {
+    font-weight: 600;
+  }
+
+  .community .events-glide {
+    margin-top: 32px;
+  }
+
+  .community .lg-image {
+    display: none !important;
+  }
+
+  .community img {
+    width: 100%;
+  }
+
+  .community .section-card button {
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding: 0 8px;
   }
 
   /* register */
@@ -598,6 +691,63 @@
 
   .register-iframe {
     height: 800px;
+  }
+
+  /* proccess */
+
+  .proccess.container-section {
+    width: 80%;
+    text-align: center;
+  }
+
+  /* more-info */
+
+  .more-info.container-section {
+    width: 90%;
+    padding: 15% 0;
+  }
+
+  .more-info .section-card {
+    padding: 32px 16px;
+  }
+
+  .more-info .section-card > div {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+  }
+
+  .more-info img {
+    margin: auto;
+    margin-top: 32px;
+  }
+
+  .more-info button a {
+    color: #051238;
+  }
+
+  /* faq */
+
+  .faq h3 {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 32px;
+  }
+
+  .faq.container-section {
+    width: 90%;
+  }
+
+  .faq .accordion-button {
+    font-size: 20px;
+  }
+
+  .faq .accordion-item {
+    padding: 16px 0;
+  }
+
+  .faq .accordion-body {
+    padding: 24px 16px;
   }
 
   /* footer */
