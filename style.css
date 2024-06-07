@@ -1009,6 +1009,7 @@ span.step {
 
 .students.container-section {
   width: 70%;
+  padding: 5% 0;
 }
 
 .students-wrapper {
@@ -1024,6 +1025,13 @@ span.step {
   border-radius: 10px;
   background: #051238;
   text-align: center;
+  color: #fff;
+}
+.student-card a {
+  color: #fff;
+}
+
+.student-card a:hover {
   color: #fff;
 }
 
@@ -1276,6 +1284,14 @@ span.step {
 
 .community span {
   font-weight: 600;
+}
+
+.community img {
+  width: 100%;
+}
+
+.community .section-card {
+  padding: 56px 24px;
 }
 
 /* proccess */
