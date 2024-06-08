@@ -57,11 +57,22 @@
     margin-left: 20px;
   }
   .dropdown {
-    /* text-align: center; */
     padding: 10px 0px;
     background-color: #051238;
     color: #fff;
   }
+
+  .nav-item {
+    background-color: #051238;
+    color: #fff;
+    padding: 0;
+    /* margin: 0; */
+  }
+
+  .nav-link {
+    margin: 16px;
+  }
+
   /* .dropdown-menu {
     left: unset !important;
     right: 0 !important;
@@ -106,6 +117,10 @@
   .navbar-green a {
     font-size: 10px;
     line-height: 12px;
+  }
+
+  .navbar-brand {
+    padding-left: 14px;
   }
 
   /* hero */
@@ -543,7 +558,7 @@
   /* students */
 
   .students {
-    padding: 15% 0;
+    padding: 10% 0;
   }
 
   .students-wrapper {
@@ -556,6 +571,10 @@
   }
 
   /* financing */
+
+  .financing-options {
+    padding: 5% 0;
+  }
 
   .financing-options h4 {
     font-size: 20px;
@@ -628,7 +647,7 @@
 
   .refund {
     padding: 48px 16px;
-    margin: 15% auto;
+    margin: 0 auto 15% ;
   }
 
   .refund h3 {

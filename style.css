@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
 * {
   font-family: "Manrope", sans-serif;
 }
@@ -9,7 +10,6 @@
 
 body {
   margin: 0;
-  /* background: url(images/bg.svg), #e5e5e5 !important; */
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1606,6 +1606,7 @@ span.step {
   line-height: 1.2;
   width: 70%;
   margin: 0 auto 48px;
+  text-align: center;
 }
 
 .register .register-wrapper {
